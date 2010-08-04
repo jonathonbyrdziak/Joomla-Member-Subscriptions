@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>subscriptions</name>
+    <author>Jonathon Byrd</author>
+    <creationDate>23/06/2010</creationDate>
+    <license>Copyright (c) 2010 - All Rights Reserved</license>
+    <version>1.0</version>
+    <description>Component is designed to manage subscriptions</description>
+
+    <!-- installation part -->
+    <install>
+        <queries>
+           
+        </queries>
+    </install>
+
+    <installfile>install.subscriptions.php</installfile>
+    <uninstallfile>uninstall.subscriptions.php</uninstallfile>
+
+    <!-- user part -->
+    <files folder="components/com_subscriptions">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>router.php</filename>
+        <filename>subscriptions.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.com_subscriptions.ini</language>
+    </languages>
+
+    <!-- administration part -->
+    <administration>
+
+    <menu task="default" img="js/ThemeOffice/component.png">subscriptions</menu>
+    <submenu>
+        <menu link="option=com_subscriptions">subscriptions</menu>
+    </submenu>
+
+    <files>
+        <filename>subscriptions.xml</filename>
+    </files>
+    <files folder="administrator/components/com_subscriptions">
+        <filename>config.xml</filename>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>install.subscriptions.php</filename>
+        <filename>subscriptions.php</filename>
+        <filename>uninstall.subscriptions.php</filename>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="administrator/language/en-GB">
+        <language tag="en-GB">en-GB.com_subscriptions.menu.ini</language>
+        <language tag="en-GB">en-GB.com_subscriptions.ini</language>
+    </languages>
+
+    </administration>
+
+    <params>
+
+    </params>
+
+</install>
